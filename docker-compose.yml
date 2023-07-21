@@ -3,10 +3,6 @@ services:
   graph-node:
     container_name: kroma-indexer
     image: graphprotocol/graph-node:latest
-    deploy:
-      resources:
-        limits:
-          memory: 4G
     ports:
       - '8000:8000'
       # Subgraph WebSocket subscriptions 
